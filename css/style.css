@@ -1,0 +1,74 @@
+html {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("back.jpg");
+}
+
+.wrapper {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.cover {
+  width: 275px;
+  float: left;
+  margin: 1em;
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+  border: solid;
+  border-color: #D4AF37;
+}
+.cover article {
+  position: relative;
+  background-color: #D4AF37;
+  height: 277px;
+  padding: 1.5em;
+  margin-top: 0;
+  opacity: 0.9;
+}
+.cover:hover {
+  cursor: pointer;
+}
+
+.infoUp article {
+  animation: infoUp 1s forwards;
+}
+.infoDown article {
+  animation: infoDown 1s forwards;
+}
+@-webkit-keyframes infoDown {
+  10% {margin-top: -280px}
+  30% {margin-top: -140px}
+  50% {margin-top: -70px}
+  70% {margin-top: -35px}
+  90% {margin-top: -17px}
+  20%, 40%, 60%, 80%, 100% {margin-top: 0}
+}
+@-webkit-keyframes infoUp {
+  10% {margin-top: 0}
+  30% {margin-top: -140px}
+  50% {margin-top: -210px}
+  70% {margin-top: -245px}
+  90% {margin-top: -262px}
+  20%, 40%, 60%, 80%, 100% {margin-top: -280px}
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+h2 {
+ margin-left: 490px;
+ text-align: center;
+ color: #D4AF37;
+ background-color: #990000;
+ width: 35%;
+ border: solid;
+ border-color: #D4AF37;
+}
